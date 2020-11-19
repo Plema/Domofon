@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Настройка LAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+</head>
+
+<body>
+
+  <main>
+
+    <form class="right-part">
+      <h3>Настройка LAN</h3>
+      <div class="flex">
+        <div class="one-block inp-block short-block">
+          <label for="inp1">Использовать IPv6</label>
+          <input type="checkbox" name="" id="inp1" checked>
+        </div>
+        <div class="one-block inp-block short-block2">
+          <label for="inp2">Эхоподавление</label>
+          <input type="checkbox" name="" id="inp2">
+        </div>
+      </div>
+
+      <div class="one-block w610">
+        <h5>Версия IP</h5>
+        <select name="" id="selectIpv" class="selectIpv"  data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+          <option value="IPV4">IPV4</option>
+          <option value="IPV3">IPV3</option>
+          <option value="IPV2">IPV2</option>
+          <option value="IPV1">IPV1</option>
+        </select>
+        <div class="flex flex-b">
+          <div >
+            <label for="ip1">IP-адрес</label>
+            <input type="text" name="" id="ip1" value="IP-адрес">
+            <label for="schluz">Основной шлюз</label>
+            <input type="text" value="192 . 168 . 98 . 0"  id="schluz">
+            <label for="dns">Альтернативный DNS</label>
+            <input type="text" id="dns" value="202 . 106 . 0 . 20" >
+          </div>
+          <div>
+            <label for="mask">Маска подсети</label>
+            <input type="text" id="mask" value="255 . 255 . 255 . 0" >
+            <label for="dns2">Предпочитаемый DNS</label>
+            <input type="text" id="dns2" value="8 . 8 .8 . 8">
+            <label for="mac">MAC-адрес</label>
+            <input type="text" id="mac" value="18 - 68 - 82 - 35 - 99 - F3" >
+          </div>
+        </div>
+      </div>
+
+      <button>Сохранить</button>
+    </form>
+  </main>
+
+
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jcf.min.js"></script>
+<script src="js/jcf.file.js"></script>
+<script src="js/jcf.select.min.js"></script>
+<script src="js/jcf.range.js"></script>
+<script src="js/script.min.js"></script>
+
+</html>

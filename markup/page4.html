@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Настройка LAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+</head>
+
+<body>
+
+  <main>
+
+    <form class="right-part">
+      <h3>Статус</h3>
+      <h4>Информация о продукте</h4>
+
+      <div class="one-block w610">
+        <div class="flex flex-b">
+          <div>
+            <label for="Model">Model</label>
+            <input type="text" name="" id="Model" value="E10R">
+            <label for="Firmware">Firmware version</label>
+            <input type="text" value="110.30.3.1" id="Firmware">
+          </div>
+          <div>
+            <label for="Address">MAC Address</label>
+            <input type="text" id="Address" value="0C:11:05:0А:0С:1D">
+            <label for="Hardware">Hardware version</label>
+            <input type="text" id="Hardware" value="110.04.0.0.0.0.0.0">
+          </div>
+        </div>
+      </div>
+
+      <h4>Информация о сети</h4>
+
+      <div class="one-block w610">
+        <div class="flex flex-b">
+          <div>
+            <label for="LAN">LAN Port Type</label>
+            <input type="text" name="" id="LAN" value="DHCP Auto">
+            <label for="lan-ip">LAN IP Address</label>
+            <input type="text" value="192.168.88.14" id="lan-ip">
+            <label for="Gateway">LAN Gateway</label>
+            <input type="text" value="192.168.88.14" id="Gateway">
+            <label for="lan-dns">LAN DNS1</label>
+            <input type="text" value="255.255.255.0" id="lan-dns">
+          </div>
+          <div>
+            <label for="Link">LAN Link Status</label>
+            <input type="text" id="Link" value="Connected">
+            <label for="Subnet">LAN Subnet Mask</label>
+            <input type="text" id="Subnet" value="255.255.255.0">
+            <label for="" class="opacity">LAN Subnet Mask</label>
+            <input type="text" class="opacity" readonly="">
+            <label for="dns2">LAN DNS2</label>
+            <input type="text" id="dns2" value="">
+          </div>
+        </div>
+      </div>
+
+      <h4>Информация о аккаунте</h4>
+
+      <div class="one-block w610">
+        <div class="flex flex-b">
+          <div>
+            <label for="Account1">Account1</label>
+            <input type="text" name="" id="Account1" value="12345@post.com">
+            <label for="Account2">Account2</label>
+            <input type="text" value="None@none" id="Account2">
+          </div>
+          <div>
+            <label for="Address" class="opacity">Account1</label>
+            <input type="text" value="Registered">
+            <label for="Hardware">Account1</label>
+            <input type="text" value="UnRegistered">
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jsf.min.js"></script>
+<script src="js/jcf.select.min.js"></script>
+<script src="js/jcf.range.js"></script>
+<script src="js/jcf.file.js"></script>
+
+<script src="js/script.js"></script>
+
+</html>
