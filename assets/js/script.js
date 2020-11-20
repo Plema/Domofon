@@ -31,3 +31,19 @@ jcf.setOptions('rangeCust', {
   buttonText: 'Выберите файл'
 });
 jcf.replace(fileCust);
+
+
+
+$(document).ready(function(){ 
+
+  $( ".navL > li" ).click(function(event) {
+    $( ".navL > li" ).removeClass('act-li')
+    $(this).addClass('act-li')
+  });
+
+  $( ".hidden > p" ).click(function(event) {
+    $( ".hidden > p" ).removeClass('active-li')
+    $(this).addClass('active-li')
+  });
+
+});

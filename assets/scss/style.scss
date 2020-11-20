@@ -1,4 +1,5 @@
 @import "libs/jcf";
+@import "libs/fontello";
 @import "libs/normalize";
 
 body {
@@ -101,26 +102,93 @@ h3 {}
 h4 {}
 
 
+.left-menu{
+    width: 235px;
+    background: #EAEFF4;
+    height: 100vh;
+    border-radius: 0px;
+    padding: 25px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .logo{
+        max-width: 55px;
+        width: 100%;
+        margin: 0 auto 50px;
+        display: block;
+    }
+    ul{
+        li{
+            margin-bottom: 20px;
+            a{
+                color: #5B5B5C;
+                font-size: 16px;
+                i{
+                    margin-right: 15px;
+                }
+                &:hover{
+                    color: #EF6023;;
+                }
+            }
+            .hidden{
+                display: none;
+                padding-top: 20px;
+                padding: 5px;
+                p{
+                    border-left: 2px solid #D6E1EC;
+                    padding: 7px 0 7px 40px;
+                    margin-bottom: 0;
+                    a{
+                        color: #5B5B5C;
+                        text-decoration: underline;
+                    }
+                }
+                .active-li{
+                    color: #EF6023;
+                    border-color: #EF6023;
+                    a{
+                        color: #EF6023;
+                    }
+                }
+            }
+        }
+        .act-li{
+            a{
+                color: #EF6023;
+
+            }
+            .hidden{
+                display: block;
+            }
+        }
+    }
+}
+
 main{
-    padding-left: 235px;
+    display: flex;
     position: relative;
     min-height: 100vh;
-    &:before{
-        content: '';
-        right: 50px;
-        bottom: 50px;
-        position: absolute;
-        width: 375px;
-        height: 301px;
-        background: url('../img/before.png') no-repeat;
-        background-size: contain;
-        z-index: -1;
-    }
+    padding-left: 235px;
     .right-part{
         padding-left: 55px;
         padding-top: 135px;
         color: #5B5B5C;
         padding-bottom: 50px;
+        border-radius: 25px 0 0 25px;
+        margin-left: -25px;
+        z-index: 2;
+        background: #fff;
+        &:before{
+            content: '';
+            right: 50px;
+            bottom: 50px;
+            position: absolute;
+            width: 375px;
+            height: 301px;
+            background: url('../img/before.png') no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
     }
     h3{
         color: #5B5B5C;
