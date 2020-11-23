@@ -15,6 +15,7 @@
 <body>
 
   <main>
+    <div id="includedContent"></div>
 
     <form class="right-part">
       <h3>Настройка LAN</h3>
@@ -33,26 +34,25 @@
         <h5>Версия IP</h5>
         <select name="" id="selectIpv" class="selectIpv"  data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
           <option value="IPV4">IPV4</option>
-          <option value="IPV3">IPV3</option>
-          <option value="IPV2">IPV2</option>
-          <option value="IPV1">IPV1</option>
+          <option value="IPV6">IPV6</option>
         </select>
         <div class="flex flex-b">
           <div >
             <label for="ip1">IP-адрес</label>
-            <input type="text" name="" id="ip1" value="IP-адрес">
+            <input type="text" name="" id="ip1" minlength="7" maxlength="15" size="15" required pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$"placeholder="255.255.255.255" value="255.255.255.255">
             <label for="schluz">Основной шлюз</label>
-            <input type="text" value="192 . 168 . 98 . 0"  id="schluz">
+            <input type="text" value="192.168.98.0"  id="schluz" 
+            pattern="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}.[0-9]{1}" placeholder="192.168.98.0" required>
             <label for="dns">Альтернативный DNS</label>
-            <input type="text" id="dns" value="202 . 106 . 0 . 20" >
+            <input type="text" id="dns" value="198.106.0.20" pattern="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}.[0-9]{1,3}" placeholder="198.106.0.20" required >
           </div>
           <div>
             <label for="mask">Маска подсети</label>
-            <input type="text" id="mask" value="255 . 255 . 255 . 0" >
+            <input type="text" id="mask" value="255.255.255.0"  required placeholder="255.255.255.0" pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}">
             <label for="dns2">Предпочитаемый DNS</label>
-            <input type="text" id="dns2" value="8 . 8 .8 . 8">
+            <input type="text" id="dns2" value="8.8.8.8" required placeholder="8.8.8.8" pattern="^([0-9]{1}\.){3}[0-9]{1}">
             <label for="mac">MAC-адрес</label>
-            <input type="text" id="mac" value="18 - 68 - 82 - 35 - 99 - F3" >
+            <input type="text" id="mac" value="18-68-82-35-99-F3" placeholder="18-68-82-35-99-F3"  required pattern="^([0-9]{1,2}\-){5}">
           </div>
         </div>
       </div>
