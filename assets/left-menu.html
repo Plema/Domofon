@@ -12,8 +12,8 @@
     </a>
     <nav>
       <ul class="navL">
-        <li class="act-li">
-          <a href="javascript:void(0).html">
+        <li class="act-li" data-link='audio' class="audio" id="index">
+          <a href="index.html">
             <i class="icon-volume"></i><span>Аудио</span>
           </a>
           <ol class="hidden">
@@ -21,20 +21,20 @@
           </ol>
         </li>
         <li>
-          <a href="javascript:void(0).html">
+          <a href="javascript:void(0)"  data-link='video'>
             <i class="icon-play-button"></i><span>Видео</span>
           </a>
         </li>
         <li>
-          <a href="javascript:void(0).html">
+          <a href="javascript:void(0).html" data-link="set">
             <i class="icon-wifi"></i><span>Сеть</span>
           </a>
           <div class="hidden">
             <p class="active-li"><a href="javascript:void(0).html">Основное</a></p>
-            <p><a href="javascript:void(0).html">LAN</a></p>
-            <p><a href="javascript:void(0).html">PPPoE</a></p>
-            <p><a href="javascript:void(0).html">UPnP</a></p>
-          </ol>
+            <p id="page2"><a href="page2.html">LAN</a></p>
+            <p id="page3"><a href="page3.html">PPPoE</a></p>
+            <p id="page4"><a href="page6.html">SIP</a></p>
+          </div>
         </li>
         <li>
           <a href="javascript:void(0).html">
@@ -60,6 +60,11 @@
           <a href="javascript:void(0).html">
             <i class="icon-wrench-tool-thin-outline-1"></i><span>Системные</span>
           </a>
+          <div class="hidden">
+            <p class="active-li"><a href="javascript:void(0).html">Основное</a></p>
+            <p><a href="#">Пользователи</a></p>
+            <p><a href="page5.html">Обновление</a></p>
+          </div>
         </li>
       </ul>
     </nav>

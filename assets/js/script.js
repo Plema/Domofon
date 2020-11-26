@@ -34,17 +34,19 @@ jcf.replace(fileCust);
 
 
 
-$(document).ready(function(){ 
+$(document).ready(function(){
+  // $("#includedContent").load("left-menu.html");
 
-  $( ".navL > li" ).click(function(event) {
-    $( ".navL > li" ).removeClass('act-li')
-    $(this).addClass('act-li')
+
+
+  $(document).on('click', '.navL > li', function() {
+    $(".navL > li").removeClass("act-li"),
+    $(this).addClass("act-li")
   });
 
-  $( ".hidden > p" ).click(function(event) {
-    $( ".hidden > p" ).removeClass('active-li')
-    $(this).addClass('active-li')
+  $(document).on('click', '.hidden > p', function() {
+    $(".hidden > p").removeClass("active-li"),
+    $(this).addClass("active-li")
   });
-
 });
 
